@@ -1,0 +1,196 @@
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    margin: 0px 15%;
+  }
+  
+  /* Main CSS Grid container */
+  
+  .container {
+    display: grid;
+    height: 100%;
+    grid-gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "u u u u u u u u u u u u"
+      "p p p p p p p p p p p p"
+      "c c c c c c c c c c c c"
+      "t t t t t t a a a a a a"
+      "e e e e e e l l l l l l"
+      "w w w w w w w w w w w w"
+      "v v v v v v v v v v v v"
+      "f f f f f f f f f f f f";
+  }
+  
+  /* .item targets all items to give a border radius and specific font weight */
+  
+  .item {
+    border-radius: 4px;
+    font-weight: 300;
+  }
+  
+  .up {
+    grid-area: u;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vmax;
+    font-weight: 100;
+    color: #333333;
+  }
+  
+  .pic {
+    grid-area: p;
+    display: flex;
+    align-items: center;
+  }
+  
+  img {
+    grid-area: p;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .content {
+    grid-area: c;
+    /* background-color: #88d8b0; */
+    display: flex;
+    line-height: 1.4;
+    font-size: 2vmax;
+    font-weight: 300;
+    color: #333333;
+  }
+  
+  .tirzah {
+    grid-area: t;
+    background-color: #fff;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 2vh;
+    color: #444;
+    padding-bottom: 2%;
+  }
+  
+  .tirzahimage {
+    padding-bottom: 1%;
+  }
+  
+  .aveline {
+    grid-area: a;
+    background-color: #fff;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 2vh;
+    padding-bottom: 2%;
+  }
+  
+  .avelineimage {
+    padding-bottom: 1%;
+  }
+  
+  .everson {
+    grid-area: e;
+    background-color: #fff;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 2vh;
+    padding-bottom: 2%;
+  }
+  
+  .eversonimage {
+    padding-bottom: 1%;
+  }
+  
+  .elden {
+    grid-area: l;
+    background-color: #fff;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 2vh;
+    padding-bottom: 2%;
+  }
+  
+  .eldenimage {
+    padding-bottom: 1%;
+  }
+  
+  .watch {
+    grid-area: w;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3vmax;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.25;
+  }
+  
+  .video {
+    grid-area: v;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer {
+    grid-area: f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 0.75em;
+  }
+  
+  a {
+    color: #3d5a80;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #3d5a80;
+  }
+  a:hover {
+    color: #333333;
+  }
+  
+  /* Media Query 768px width */
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "u u u u u u u u u u u u"
+        "p p p p p p p p p p p p"
+        "c c c c c c c c c c c c"
+        "t t t t t t t t t t t t"
+        "a a a a a a a a a a a a"
+        "e e e e e e e e e e e e"
+        "l l l l l l l l l l l l"
+        "w w w w w w w w w w w w"
+        "v v v v v v v v v v v v"
+        "f f f f f f f f f f f f";
+      grid-template-rows: 150px auto auto auto auto auto auto auto auto auto;
+    }
+  
+    body {
+      margin: 0px;
+    }
+  
+    .tirzah {
+      padding-bottom: 8%;
+    }
+    .aveline {
+      padding-bottom: 8%;
+    }
+    .everson {
+      padding-bottom: 8%;
+    }
+    .elden {
+      padding-bottom: 0%;
+    }
+    .watch {
+    }
+  }
+  
